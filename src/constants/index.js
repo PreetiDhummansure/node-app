@@ -10,4 +10,4 @@ exports.ROUNDS = parseInt(process.env.ROUNDS) || 10;
 
 exports.PORT = parseInt(process.env.PORT) || 5000;
 
-exports.SERVER = process.env.SERVER || `http://localhost:${PORT}`;
+exports.SERVER = process.env.SERVER || `http://localhost:${exports.PORT}`;

@@ -12,7 +12,7 @@ exports.login = async (req, res) => {
 
 		let user = await UserModel.findOne({ email });
 
-		if (Object.keys(user).length === 0) return success({ res, msg: "Emial not found!", data: {}, status: 404 });
+		if (Object.keys(user).length === 0) return success({ res, msg: "Email not found!", data: {}, status: 404 });
 
 		const isPassMatched = await bcrypt.compare(password, user.password);
 

@@ -1,12 +1,12 @@
-const mongoose = require("mongoose");
+//const mongoose = require("mongoose");
 
-const { DATABASE_URI } = require("../constants/index");
+//const { DATABASE_URI } = require("../constants/index");
 
-mongoose
-	.connect(DATABASE_URI, {
-		useNewUrlParser: true,
-		useUnifiedTopology: true,
-	})
-	.catch((err) => {
-		console.log("Err: ", err.message);
-	});
+//mongoose
+//	.connect(DATABASE_URI, {
+//		useNewUrlParser: true,
+//		useUnifiedTopology: true,
+//	})
+//	.catch((err) => {
+//		console.log("Err: ", err.message);
+//	});
