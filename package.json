@@ -8,15 +8,15 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/mern-154/node-app.git"
+		"url": "git+https://github.com/mern-154/node-preeti/branches"
 	},
 	"keywords": [],
 	"author": "",
 	"license": "ISC",
 	"bugs": {
-		"url": "https://github.com/mern-154/node-app/issues"
+		"url": "https://github.com/mern-154/node-preeti/issues"
 	},
-	"homepage": "https://github.com/mern-154/node-app#readme",
+	"homepage": "https://github.com/mern-154/node-app/tree/main",
 	"devDependencies": {
 		"nodemon": "^2.0.20"
 	},
