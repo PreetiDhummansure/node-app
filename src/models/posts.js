@@ -18,18 +18,40 @@ const postsSchema = new mongoose.Schema({
             }
    },
     category_id:{
-        type:String,
-        required:true,
+        type: String,
+        type: mongoose.Schema.Types.ObjectId,
+        ref: "Category",
+        alias: "category",
+        required: true,
     },
     user_id:{
-        type:String,
-        required:true,
+        type: String,
+        type: mongoose.Schema.Types.ObjectId,
+        ref: "User",
+        alias: "user",
+        required: true,
+
     },
     status:{
         type: Boolean,
     default: true,
 }
+},
+{
+    versionKey: false,
+    timestamps: true,
+    toJSON: {
+        transform(doc, res) {
+            delete res._id;
+            delete res.__v;
+            delete res.userId;
+            delete res.categoryId;
+            delete res.createdAt;
+            delete res.updatedAt;
+        },
+        getters: true,
+    },
 }
-)
+)//.plugin(mongoosePaginate);
 
 module.exports =mongoose.model('posts',postsSchema);
